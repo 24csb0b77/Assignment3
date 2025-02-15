@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Booking - Delhi Tourism</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        /* Previous styles remain the same */
+        .booking-form {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+
+        .header {
+            text-align: center;
+            justify-content: center;
+            font-family: Calibri, 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            display: inline;
+            box-shadow: 1px 0px 0.5px 0.5px #887e7e;
+            font-style: oblique;
+
+            margin: 3px;
+        }
+
+        .booking-form {
+            color: #ddd;
+            font-family: Arial, sans-serif;
+            background-color: #057874;
+            display: flex;
+            justify-content: center;
+            align-items: left;
+            height: 50vw;
+            width: 30vw;
+            border-radius: 10%;
+        }
+
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: bold;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 0.5rem;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+        }
+
+        button {
+            background: #e74c3c;
+            color: white;
+            padding: 1rem 2rem;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation remains the same -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="header">
+        <h1>Hotel Booking</h1>
+    </div>
+
+    <div class="booking-form">
+        <form action="/submit-booking" method="POST">
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkin">Check-in Date</label>
+                <input type="date" id="checkin" name="checkin" required>
+            </div>
+
+            <div class="form-group">
+                <label for="checkout">Check-out Date</label>
+                <input type="date" id="checkout" name="checkout" required>
+            </div>
+
+            <div class="form-group">
+                <label for="guests">Number of Guests</label>
+                <select id="guests" name="guests" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="room-type">Room Type</label>
+                <select id="room-type" name="room-type" required>
+                    <option value="standard">Standard Room</option>
+                    <option value="deluxe">Deluxe Room</option>
+                    <option value="suite">Suite</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="special-requests">Special Requests</label>
+                <textarea id="special-requests" name="special-requests" rows="4"></textarea>
+            </div>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <footer>
+        <p>© 2025 Delhi Tourism. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
