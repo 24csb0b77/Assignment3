@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delhi Heritage Sites</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        /* Previous styles remain the same */
+        .heritage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            padding: 2rem;
+        }
+
+        nav {
+            background: #333;
+            padding: 1rem;
+        }
+        .header{
+            text-align: center;
+            padding: 3px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            margin: 0 0.5rem;
+        }
+
+
+        .heritage-item {
+            text-align: center;
+        }
+
+        .heritage-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        .heritage-item a {
+            text-decoration: none;
+            color: #333;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation remains the same -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="heritage.html">Heritage</a>
+        <a href="hotel.html">Hotel Booking</a>
+        <a href="gallery.html">Gallery</a>
+    </nav>
+
+    <div class="header">
+        <h1>Heritage Sites of Delhi</h1>
+    </div>
+
+    <div class="heritage-grid">
+        <div class="heritage-item">
+            <a href="red-fort.html">
+                <img src="https://media.istockphoto.com/id/530741074/photo/red-fort-lal-qila-with-indian-flag-delhi-india.jpg?s=612x612&w=0&k=20&c=7BTI-dgQNPPTq2yARrwIBf2yIqO4PUPX1EJY5ITIyoM="
+                    alt=" Red Fort">
+                <h3>Red Fort</h3>
+            </a>
+        </div>
+        <div class="heritage-item">
+            <a href="qutub-minar.html">
+                <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/08/b7/1f/31/qutab-minar.jpg?w=1200&h=1200&s=1"
+                    alt="Qutub Minar">
+                <h3>Qutub Minar</h3>
+            </a>
+        </div>
+        <div class="heritage-item">
+            <a href="humayun-tomb.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d2/Tomb_of_Humayun%2C_Delhi.jpg/1200px-Tomb_of_Humayun%2C_Delhi.jpg"
+                    alt="Humayun's Tomb">
+                <h3>Humayun's Tomb</h3>
+            </a>
+        </div>
+        <div class="heritage-item">
+            <a href="india-gate.html">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcShG4cuMtUHZMk2TLkn5uW7AFWAz2vrdpRcBA&s"
+                    alt="India Gate">
+                <h3>India Gate</h3>
+            </a>
+        </div>
+        <div class="heritage-item">
+            <a href="lotus-temple.html">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fc/LotusDelhi.jpg/640px-LotusDelhi.jpg"
+                    alt="Lotus Temple">
+                <h3>Lotus Temple</h3>
+            </a>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2025 Delhi Tourism. All rights reserved.</p>
+    </footer>
+</body>
+
+</html>
